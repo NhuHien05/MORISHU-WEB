@@ -899,3 +899,7 @@ h2 em{ font-style:normal; }
 
 /* ---- product cards: tighter text area ---- */
 .feat-body{ min-height:92px; padding:18px 14px 18px; }
+
+/* ---- footer headings: no underline, accent colour ---- */
+.site-footer h4::after{ display:none !important; }
+.site-footer h4{ color:#F4C95D !important; padding-bottom:0; margin-bottom:16px; }
