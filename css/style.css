@@ -724,3 +724,15 @@ html,body{ overflow-x:clip; }
 .cta-photo .cta-actions{ display:flex; gap:14px; flex-wrap:wrap; }
 .cta-photo .cta-actions .btn-primary{ background:#fff; color:var(--green-900); }
 @media (max-width:700px){ .cert-bar{ padding:26px 18px 30px; } .cert-bar .cert-list{ justify-content:center; } .cert-bar .cert-list li{ flex:0 0 calc(50% - 12px); } .cta-photo{ height:auto; padding:34px 24px; } }
+
+/* ---- CTA: show the whole photo, no cropping ---- */
+.cta-photo{ height:auto !important; aspect-ratio:2048/768; }
+.cta-photo .cta-bg{ object-fit:fill; object-position:center; }
+@media (max-width:900px){
+  .cta-photo{ aspect-ratio:auto; padding:0 !important; justify-content:flex-start; gap:0; background:linear-gradient(135deg,#0B5E3C,#2E8B57); overflow:hidden; }
+  .cta-photo .cta-bg{ position:static; inset:auto; width:100%; height:auto; aspect-ratio:2048/768; object-fit:cover; order:-1; }
+  .cta-photo::before{ display:none !important; }
+  .cta-photo > div, .cta-photo .cta-actions{ position:relative; z-index:2; margin:0 24px; }
+  .cta-photo > div{ margin-top:22px; max-width:none; }
+  .cta-photo .cta-actions{ margin-bottom:26px; margin-top:16px; }
+}
