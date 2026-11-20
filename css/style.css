@@ -19,7 +19,7 @@
   --ink-soft:     #55594A;
   --white:        #FFFFFF;
 
-  --font-display: "Playfair Display", "Noto Serif", Georgia, serif;
+  --font-display: "Montserrat", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body:    "Inter", "Noto Sans", -apple-system, BlinkMacSystemFont, sans-serif;
 
   --maxw: 1320px;
@@ -886,3 +886,16 @@ html,body{ overflow-x:clip; }
 .hero-grid .btn{ animation-delay:.75s; }
 .hero-grid .btn:hover{ transform:translateY(-3px); box-shadow:0 10px 22px rgba(11,94,60,.28); }
 @media (prefers-reduced-motion:reduce){ .hero-bg, .hero-jp, .hero h1, .hero-meta2, .hero-grid .btn{ animation:none; opacity:1; } }
+
+/* ---- typography spec: Montserrat 800 headings / 700 subheadings, Inter 400 body / 500 nav ---- */
+body{ font-family:"Inter","Noto Sans",-apple-system,sans-serif; font-weight:400; }
+h1,h2,.logo .mark,.cv-title,.cert-title{ font-family:"Montserrat","Inter",sans-serif !important; font-weight:800 !important; }
+h3,h4,.feat-body h3,.hero-meta2,.cv-line span,.cv-list span,.cert-list span{ font-family:"Montserrat","Inter",sans-serif !important; font-weight:700 !important; }
+.main-nav a, .main-nav a[aria-current="page"]{ font-family:"Inter",sans-serif; font-weight:500 !important; }
+h1,h2{ letter-spacing:-.01em; }
+.hero h1{ font-size:clamp(1.8rem,3.3vw,3.1rem); letter-spacing:0; }
+.story2 h2,.mfg2 h2{ font-size:clamp(1.4rem,2.1vw,1.95rem); }
+h2 em{ font-style:normal; }
+
+/* ---- product cards: tighter text area ---- */
+.feat-body{ min-height:92px; padding:18px 14px 18px; }
