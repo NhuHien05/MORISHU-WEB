@@ -939,3 +939,10 @@ html{ -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; tex
 
 .story-eyebrow{ display:flex; align-items:center; gap:12px; margin-bottom:10px; }
 .story-eyebrow span{ font-family:"Montserrat","Inter",sans-serif; font-weight:700; font-size:clamp(.85rem,1.1vw,1rem); letter-spacing:.08em; color:#1F7A47; }
+
+/* eyebrow labels unified (leaf + Montserrat 700) */
+.cv-eyebrow.story-eyebrow, .section-head.center .story-eyebrow{ justify-content:center; }
+.cv-eyebrow.story-eyebrow{ flex-direction:row; margin-bottom:0; }
+.section-head.center .story-eyebrow{ margin-bottom:8px; }
+.mfg2 .story-eyebrow, .story2 .story-eyebrow{ justify-content:flex-start; }
+.story-eyebrow{ text-transform:uppercase; }
