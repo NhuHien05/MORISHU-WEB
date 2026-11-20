@@ -782,3 +782,14 @@ html,body{ overflow-x:clip; }
 .social-row a:hover{ background:#F4C95D; border-color:#F4C95D; color:#0B5E3C; }
 .footer-bottom{ border-top:1px solid rgba(250,253,248,.18); }
 @media (prefers-reduced-motion:reduce){ .site-footer,.site-footer::before,.site-footer::after{ animation:none; } }
+
+/* ---- product cards v2: uppercase name, View Product under it ---- */
+.feat-card .feat-photo .feat-link{ all:unset; }
+.feat-body h3{ text-transform:uppercase; letter-spacing:.08em; font-size:1.02rem; margin:0; transition:letter-spacing .35s ease, color .3s ease; }
+.feat-card:hover .feat-body h3{ letter-spacing:.14em; color:var(--green-700); }
+.feat-body .feat-link{ display:inline-block; position:relative; margin-top:0; max-height:0; opacity:0; overflow:hidden; font-size:.85rem; font-weight:600; color:var(--green-800); transform:translateY(-6px); transition:max-height .35s ease, opacity .35s ease, transform .35s ease, margin-top .35s ease; }
+.feat-body .feat-link::after{ content:""; position:absolute; left:0; bottom:0; height:1.5px; width:0; background:var(--green-700); transition:width .4s ease .1s; }
+.feat-card:hover .feat-body .feat-link, .feat-card:focus-visible .feat-body .feat-link{ max-height:2em; opacity:1; transform:none; margin-top:10px; }
+.feat-card:hover .feat-body .feat-link::after{ width:100%; }
+.feat-body{ min-height:72px; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+@media (hover:none){ .feat-body .feat-link{ max-height:2em; opacity:1; transform:none; margin-top:10px; } }
