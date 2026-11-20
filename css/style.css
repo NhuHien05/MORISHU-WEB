@@ -811,3 +811,8 @@ html,body{ overflow-x:clip; }
 .feat-body .feat-link{ font-weight:700; font-size:.9rem; }
 .feat-card:hover .feat-body .feat-link{ margin-top:6px; }
 @media (hover:none){ .feat-body .feat-link{ margin-top:6px; } }
+
+/* ---- product names: clean modern sans ---- */
+.feat-body h3{ font-family:var(--font-body); font-weight:800; font-size:clamp(.95rem,1.25vw,1.15rem); letter-spacing:.1em; text-transform:uppercase; }
+.feat-body h3::after{ width:28px; height:3px; }
+.feat-card:hover .feat-body h3{ letter-spacing:.1em; }
