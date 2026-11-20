@@ -583,3 +583,14 @@ h1 em, h2 em{ color:transparent; -webkit-text-fill-color:transparent; font-style
 }
 .cta-banner h2 em{ -webkit-text-fill-color:currentColor; color:#fff; }
 .cert-title{ background:linear-gradient(90deg,#0B5E3C 0%,#2E8B57 100%); -webkit-background-clip:text; background-clip:text; }
+
+/* ---- evenness pass ---- */
+h1, h2{ line-height:1.22; }
+.section, .feat-section{ padding-top:72px; padding-bottom:72px; }
+.section-head{ margin-bottom:40px; }
+.story h2, .mfg-split h2{ margin-bottom:14px; }
+.eyebrow{ margin-bottom:10px; }
+.feature-trio{ gap:24px; }
+.hero + .section{ padding-top:72px; }
+.cta-photo{ max-width:none; }
+@media (max-width:900px){ .section, .feat-section{ padding-top:52px; padding-bottom:52px; } }
