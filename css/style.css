@@ -572,7 +572,7 @@ p{ margin:0 0 1em; color:var(--ink-soft); max-width:62ch; }
 /* ---- gradient headings (brand: Forest Green -> Leaf Green) ---- */
 h1, h2{
   width:fit-content; max-width:100%;
-  background:linear-gradient(90deg,#0B5E3C 0%,#2E8B57 100%);
+  background:linear-gradient(90deg,#015E12 0%,#2F8A0C 45%,#8CCB04 100%);
   -webkit-background-clip:text; background-clip:text;
   -webkit-text-fill-color:transparent; color:transparent;
 }
@@ -582,7 +582,7 @@ h1 em, h2 em{ color:transparent; -webkit-text-fill-color:transparent; font-style
   background:none; -webkit-text-fill-color:currentColor; color:#fff;
 }
 .cta-banner h2 em{ -webkit-text-fill-color:currentColor; color:#fff; }
-.cert-title{ background:linear-gradient(90deg,#0B5E3C 0%,#2E8B57 100%); -webkit-background-clip:text; background-clip:text; }
+.cert-title{ background:linear-gradient(90deg,#015E12 0%,#2F8A0C 45%,#8CCB04 100%); -webkit-background-clip:text; background-clip:text; }
 
 /* ---- evenness pass ---- */
 h1, h2{ line-height:1.22; }
