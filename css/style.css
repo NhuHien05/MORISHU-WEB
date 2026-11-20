@@ -928,3 +928,11 @@ html{ -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; tex
   .cta-photo{ background:#FAFDF8 !important; border:1px solid #DCEFE0; }
   .cta-photo h2{ font-size:clamp(1.5rem,6.4vw,2rem); }
 }
+
+/* ---- story text per mockup ---- */
+.story2{ grid-template-columns:1.15fr 1fr; }
+.story2 .story-text h2{ font-size:clamp(1.9rem,3.3vw,3.1rem); line-height:1.12; letter-spacing:-.015em; margin-bottom:16px; }
+.story2 .story-text p{ font-size:clamp(.98rem,1.2vw,1.12rem); line-height:1.6; color:#4F4F44; max-width:30em; margin-bottom:24px; }
+.story2 .story-text .btn-primary{ background:#0B5E3C; color:#fff; border:2px solid #0B5E3C; padding:14px 34px; font-weight:700; border-radius:999px; transition:transform .25s ease, box-shadow .25s ease; }
+.story2 .story-text .btn-primary:hover{ transform:translateY(-3px); box-shadow:0 10px 20px rgba(11,94,60,.22); }
+@media (max-width:900px){ .story2{ grid-template-columns:1fr; } }
