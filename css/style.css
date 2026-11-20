@@ -223,15 +223,16 @@ p{ margin:0 0 1em; color:var(--ink-soft); max-width:62ch; }
 
 /* ---------- story split ---------- */
 .story{
-  display:grid; grid-template-columns:.9fr 1.1fr; gap:60px; align-items:center;
+  display:grid; grid-template-columns:1.1fr .9fr; gap:60px; align-items:center;
 }
 .story-media{ position:relative; }
 .story-photo{
-  border-radius:20px; aspect-ratio:4/5; overflow:hidden;
+  border-radius:20px; aspect-ratio:3/2; overflow:hidden;
   background:linear-gradient(155deg, var(--green-mist), var(--cream-soft));
   display:flex; align-items:center; justify-content:center;
 }
 .story-photo svg{ width:72%; height:72%; }
+.story-photo img{ width:100%; height:100%; object-fit:cover; }
 
 /* ---------- flavor grid ---------- */
 .flavor-grid{
