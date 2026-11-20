@@ -946,3 +946,13 @@ html{ -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; tex
 .section-head.center .story-eyebrow{ margin-bottom:8px; }
 .mfg2 .story-eyebrow, .story2 .story-eyebrow{ justify-content:flex-start; }
 .story-eyebrow{ text-transform:uppercase; }
+
+/* ---- footer text brighter ---- */
+.footer-brand p{ color:rgba(255,255,255,.9) !important; }
+.site-footer ul li a{ color:rgba(255,255,255,.92) !important; }
+.site-footer ul li a:hover{ color:#F4C95D !important; }
+.footer-contact li, .footer-contact li a{ color:#fff !important; }
+.fc-ico{ background:rgba(255,255,255,.16) !important; color:#fff !important; }
+.footer-bottom, .footer-bottom a, .footer-bottom p, .footer-bottom span{ color:rgba(255,255,255,.85) !important; }
+.footer-bottom a:hover{ color:#F4C95D !important; }
+.footer-bottom{ border-top:1px solid rgba(255,255,255,.28) !important; }
