@@ -82,7 +82,10 @@
       <h2 data-en="Discover MORISHU Fruit Juice" data-vi="Khám phá nước ép trái cây MORISHU">Discover MORISHU Fruit Juice</h2>
       <p data-en="Crafted from real fruit, made for every market." data-vi="Làm từ trái cây thật, phù hợp cho mọi thị trường." style="margin:0 auto;">Crafted from real fruit, made for every market.</p>
     </div>
-    <div class="feat-grid reveal">
+    <div class="feat-carousel reveal" aria-roledescription="carousel">
+    <button class="feat-arrow prev" type="button" aria-label="Previous">&#8592;</button>
+    <button class="feat-arrow next" type="button" aria-label="Next">&#8594;</button>
+    <div class="feat-viewport"><div class="feat-grid">
       <a class="feat-card" href="products.html">
         <div class="feat-photo"><img src="images/featured/orange.webp" alt="MORISHU Orange Juice can" width="750" height="690" loading="lazy"></div>
         <div class="feat-body">
@@ -115,6 +118,7 @@
           <span class="feat-link" data-en="View Product →" data-vi="Xem sản phẩm →">View Product →</span>
         </div>
       </a>
+    </div></div>
     </div>
     <div class="feat-cta reveal"><a class="btn btn-primary" href="products.html" data-en="Explore All Products →" data-vi="Xem tất cả sản phẩm →">Explore All Products →</a></div>
   </div>
@@ -213,5 +217,6 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script src="js/carousel.js"></script>
 </body>
 </html>
