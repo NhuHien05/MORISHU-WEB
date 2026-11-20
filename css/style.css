@@ -979,3 +979,29 @@ html{ -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; tex
 .footer-logo{ display:inline-block; }
 .footer-logo img{ width:clamp(150px,14vw,200px); height:auto; display:block; }
 .footer-brand p{ margin-top:14px !important; }
+
+/* ---- footer layout v2: balanced columns, dividers, aligned bottom bar ---- */
+.footer-inner{ grid-template-columns:1.5fr 1fr 1fr 1.4fr !important; gap:0 !important; padding-top:60px !important; padding-bottom:44px !important; align-items:stretch; }
+.footer-inner > div{ padding:0 36px; }
+.footer-inner > div:first-child{ padding-left:0; }
+.footer-inner > div:last-child{ padding-right:0; }
+.footer-inner > div + div{ border-left:1px solid rgba(255,255,255,.2); }
+.footer-logo img{ width:clamp(170px,15vw,215px); }
+.footer-brand p{ max-width:290px !important; margin:16px 0 22px !important; line-height:1.6; }
+.social-row{ gap:12px; }
+.social-row a{ width:42px !important; height:42px !important; }
+.site-footer h4{ margin-bottom:22px !important; font-size:.84rem !important; letter-spacing:.14em; }
+.site-footer ul li{ margin-bottom:14px; }
+.footer-contact li{ margin-bottom:16px !important; }
+.footer-bottom{ position:relative; border-top:0 !important; display:flex; justify-content:space-between; align-items:center; padding-top:22px !important; padding-bottom:24px !important; font-size:.88rem; }
+.footer-bottom::before{ content:""; position:absolute; top:0; left:28px; right:28px; height:1px; background:rgba(255,255,255,.28); }
+@media (max-width:900px){
+  .footer-inner{ grid-template-columns:1fr 1fr !important; gap:36px 0 !important; padding-top:44px !important; }
+  .footer-inner > div, .footer-inner > div:first-child, .footer-inner > div:last-child{ padding:0; border-left:0 !important; }
+  .footer-inner > div:nth-child(even){ padding-left:28px; border-left:1px solid rgba(255,255,255,.2) !important; }
+  .footer-brand{ grid-column:1 / -1; }
+  .footer-inner > div:nth-child(2){ border-left:0 !important; padding-left:0; }
+  .footer-inner > div:nth-child(3){ padding-left:28px; border-left:1px solid rgba(255,255,255,.2) !important; }
+  .footer-inner > div:nth-child(4){ grid-column:1 / -1; padding-left:0; border-left:0 !important; }
+}
+@media (max-width:520px){ .footer-bottom{ flex-direction:column; gap:8px; text-align:center; } }
