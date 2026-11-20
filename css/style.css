@@ -541,7 +541,7 @@ p{ margin:0 0 1em; color:var(--ink-soft); max-width:62ch; }
 @media (max-width:900px){ .hero{ height:auto !important; } .hero .wave{ display:none; } .hero-grid > div{ max-width:none; } .hero{ padding-top:36px !important; } }
 
 /* ---- certifications banner ---- */
-.cert-section{ background:#fefefe; padding-top:clamp(40px,5vw,64px); overflow:hidden; }
+.cert-section{ background:#fdf4eb; padding-top:clamp(40px,5vw,64px); overflow:hidden; }
 .cert-title{ text-align:center; margin:0; font-family:var(--font-body, inherit); font-weight:800; text-transform:uppercase;
   letter-spacing:.28em; font-size:clamp(1.1rem,2.6vw,2rem);
   background:linear-gradient(90deg,var(--green-800) 0%,var(--green-800) 40%,var(--gold) 100%); -webkit-background-clip:text; background-clip:text; color:transparent; }
