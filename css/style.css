@@ -410,7 +410,7 @@ p{ margin:0 0 1em; color:var(--ink-soft); max-width:62ch; }
 }
 .footer-inner{
   display:grid; grid-template-columns:1.3fr 1fr 1fr 1fr; gap:40px;
-  padding:64px 0 36px;
+  padding-top:64px; padding-bottom:36px;
 }
 .footer-brand .logo .mark{ color:var(--cream-soft); }
 .footer-brand p{ color:rgba(248,241,226,.65); font-size:.9rem; margin-top:14px; }
@@ -425,7 +425,7 @@ p{ margin:0 0 1em; color:var(--ink-soft); max-width:62ch; }
 }
 .social-row a:hover{ border-color:var(--gold-soft); background:rgba(248,241,226,.06); }
 .footer-bottom{
-  border-top:1px solid rgba(248,241,226,.14); padding:20px 0;
+  border-top:1px solid rgba(248,241,226,.14);
   display:flex; justify-content:space-between; font-size:.8rem; color:rgba(248,241,226,.55);
 }
 
@@ -509,3 +509,20 @@ p{ margin:0 0 1em; color:var(--ink-soft); max-width:62ch; }
 .feat-body p{ min-height:3.4em; }
 .feat-body h3{ min-height:1.5em; }
 @media (max-width:900px){ .hero{ height:auto !important; } .cta-photo{ height:auto; min-height:380px; } }
+
+/* ---- footer polish ---- */
+.site-footer{ background:linear-gradient(180deg,var(--green-900),#0e2820); }
+.footer-inner{ grid-template-columns:1.5fr .8fr .8fr 1.3fr; padding-top:72px; padding-bottom:44px; }
+.site-footer h4{ position:relative; padding-bottom:12px; margin-bottom:20px; text-transform:uppercase; font-size:.84rem; letter-spacing:.1em; }
+.site-footer h4::after{ content:""; position:absolute; left:0; bottom:0; width:28px; height:2px; background:var(--gold-soft); border-radius:2px; }
+.footer-brand p{ max-width:300px; line-height:1.6; margin:14px 0 20px; }
+.footer-contact li{ display:flex; align-items:flex-start; gap:12px; margin-bottom:14px; font-size:.9rem; color:rgba(248,241,226,.78); }
+.footer-contact li a{ color:inherit; }
+.fc-ico{ flex:0 0 34px; height:34px; border-radius:50%; background:rgba(248,241,226,.08); color:var(--gold-soft); display:flex; align-items:center; justify-content:center; }
+.footer-contact li > a, .footer-contact li > span:not(.fc-ico){ padding-top:6px; line-height:1.4; }
+.social-row a{ color:var(--cream-soft); transition:all .2s; }
+.social-row a:hover{ color:var(--gold-soft); transform:translateY(-2px); }
+.site-footer ul li a{ transition:color .2s, padding-left .2s; }
+.footer-bottom{ padding-top:22px; padding-bottom:22px; }
+@media (max-width:900px){ .footer-inner{ grid-template-columns:1fr 1fr; } }
+@media (max-width:520px){ .footer-inner{ grid-template-columns:1fr; } }
