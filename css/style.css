@@ -959,3 +959,10 @@ html{ -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; tex
 
 /* active nav pill: bold text, brighter gradient */
 .main-nav a[aria-current="page"]{ font-weight:700 !important; background:linear-gradient(90deg,#1F8A4C 0%,#3FA33F 55%,#6DB81E 100%); box-shadow:0 6px 14px rgba(47,138,12,.28); }
+
+/* ---- footer contact icons in colour ---- */
+.footer-contact li .fc-ico{ color:#fff !important; box-shadow:0 4px 10px rgba(0,0,0,.18); }
+.footer-contact li:nth-child(1) .fc-ico{ background:linear-gradient(135deg,#FFB347,#F4C95D) !important; color:#0B5E3C !important; }
+.footer-contact li:nth-child(2) .fc-ico{ background:linear-gradient(135deg,#8CCB04,#B6E04A) !important; color:#0B5E3C !important; }
+.footer-contact li:nth-child(3) .fc-ico{ background:linear-gradient(135deg,#FF7A59,#FFA07A) !important; color:#fff !important; }
+.footer-contact li:hover .fc-ico{ transform:scale(1.1) rotate(-6deg); }
