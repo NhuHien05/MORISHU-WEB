@@ -816,3 +816,10 @@ html,body{ overflow-x:clip; }
 .feat-body h3{ font-family:var(--font-body); font-weight:800; font-size:clamp(.95rem,1.25vw,1.15rem); letter-spacing:.1em; text-transform:uppercase; }
 .feat-body h3::after{ width:28px; height:3px; }
 .feat-card:hover .feat-body h3{ letter-spacing:.1em; }
+
+/* ---- product names v3: clean sans, taller card text area ---- */
+.feat-body h3{ font-family:var(--font-body); font-weight:800; font-size:clamp(.95rem,1.15vw,1.12rem); letter-spacing:.12em; padding-bottom:14px; }
+.feat-body{ min-height:118px; padding:28px 14px 28px; }
+.feat-section{ padding-top:36px; padding-bottom:36px; }
+.feat-card:hover .feat-body .feat-link{ margin-top:10px; }
+@media (hover:none){ .feat-body .feat-link{ margin-top:10px; } }
