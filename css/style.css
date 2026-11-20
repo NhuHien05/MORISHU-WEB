@@ -22,7 +22,7 @@
   --font-display: "Playfair Display", "Noto Serif", Georgia, serif;
   --font-body:    "Inter", "Noto Sans", -apple-system, BlinkMacSystemFont, sans-serif;
 
-  --maxw: 1180px;
+  --maxw: 1320px;
   --radius: 10px;
   --shadow-soft: 0 12px 28px -16px rgba(18,51,42,0.28);
   --ease: cubic-bezier(.22,.8,.32,1);
@@ -612,3 +612,8 @@ h1, h2{ line-height:1.22; }
 .feat-bg{ width:min(calc(var(--maxw) - 56px), calc(100% - 56px)); max-width:none; }
 .sec-ivory{ background:#fff; }
 html,body{ overflow-x:clip; }
+
+.section, .feat-section{ padding-top:64px; padding-bottom:64px; }
+.cert-section{ padding:64px 0; }
+.feat-bg{ top:64px; height:calc(100% - 128px); }
+@media (max-width:900px){ .feat-bg{ top:52px; height:calc(100% - 104px); } }
