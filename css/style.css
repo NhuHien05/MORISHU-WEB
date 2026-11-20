@@ -956,3 +956,6 @@ html{ -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; tex
 .footer-bottom, .footer-bottom a, .footer-bottom p, .footer-bottom span{ color:rgba(255,255,255,.85) !important; }
 .footer-bottom a:hover{ color:#F4C95D !important; }
 .footer-bottom{ border-top:1px solid rgba(255,255,255,.28) !important; }
+
+/* active nav pill: bold text, brighter gradient */
+.main-nav a[aria-current="page"]{ font-weight:700 !important; background:linear-gradient(90deg,#1F8A4C 0%,#3FA33F 55%,#6DB81E 100%); box-shadow:0 6px 14px rgba(47,138,12,.28); }
