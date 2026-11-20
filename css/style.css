@@ -966,3 +966,11 @@ html{ -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; tex
 .footer-contact li:nth-child(2) .fc-ico{ background:linear-gradient(135deg,#8CCB04,#B6E04A) !important; color:#0B5E3C !important; }
 .footer-contact li:nth-child(3) .fc-ico{ background:linear-gradient(135deg,#FF7A59,#FFA07A) !important; color:#fff !important; }
 .footer-contact li:hover .fc-ico{ transform:scale(1.1) rotate(-6deg); }
+
+/* ---- manufacturing block: roomier frame ---- */
+.mfg2{ grid-template-columns:1.2fr 1fr; gap:48px; }
+.mfg2 .story-photo{ aspect-ratio:1.55/1; }
+.mfg2 .story-text h2{ font-size:clamp(1.6rem,2.6vw,2.45rem); line-height:1.15; margin-bottom:16px; }
+.mfg2 .story-text p{ font-size:clamp(.98rem,1.15vw,1.08rem); line-height:1.6; margin-bottom:24px; }
+.mfg-feats{ margin-top:10px; }
+@media (max-width:900px){ .mfg2{ grid-template-columns:1fr; gap:22px; } .mfg2 .story-photo{ aspect-ratio:1.6/1; } }
