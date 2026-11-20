@@ -736,3 +736,14 @@ html,body{ overflow-x:clip; }
   .cta-photo > div{ margin-top:22px; max-width:none; }
   .cta-photo .cta-actions{ margin-bottom:26px; margin-top:16px; }
 }
+
+
+/* ---- hero text per mockup ---- */
+.hero-grid > div{ max-width:min(640px,48vw); }
+.hero-jp{ font-family:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif; font-weight:600; font-size:clamp(1rem,1.5vw,1.4rem); line-height:1.5; color:var(--green-900); margin-bottom:14px; letter-spacing:.06em; }
+.hero h1{ text-transform:uppercase; font-weight:700; letter-spacing:.005em; font-size:clamp(1.65rem,3.6vw,3.4rem); line-height:1.08; margin-bottom:16px;
+  background:linear-gradient(90deg,#0B5E3C 0%,#0B5E3C 38%,#B6872E 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; color:transparent; }
+.hero h1 em{ font-style:normal; }
+.hero-meta2{ font-family:var(--font-body); font-weight:700; font-size:clamp(.95rem,1.2vw,1.1rem); color:var(--green-900); margin:0 0 22px; max-width:none; }
+.hero{ height:clamp(440px,31vw,600px); }
+@media (max-width:900px){ .hero-grid > div{ max-width:none; } .hero{ height:auto !important; } }
