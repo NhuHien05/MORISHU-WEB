@@ -910,3 +910,6 @@ html{ -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; tex
 .feat-section .eyebrow{ letter-spacing:.16em; font-weight:600; font-size:.74rem; }
 .feat-body h3{ font-size:clamp(.88rem,1.05vw,1rem); letter-spacing:.07em; }
 .feat-body .feat-link{ font-size:.82rem; }
+
+/* certifications label: no side lines */
+.cv-line i{ display:none !important; }
