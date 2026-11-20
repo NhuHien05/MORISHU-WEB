@@ -30,8 +30,6 @@
   function stop(){ if(timer){ clearInterval(timer); timer=null; } }
   root.querySelector('.next').addEventListener('click',function(){ next(); start(); });
   root.querySelector('.prev').addEventListener('click',function(){ prev(); start(); });
-  root.addEventListener('mouseenter',stop); root.addEventListener('mouseleave',start);
-  root.addEventListener('focusin',stop); root.addEventListener('focusout',start);
   var sx=null;
   vp.addEventListener('touchstart',function(e){ sx=e.touches[0].clientX; stop(); },{passive:true});
   vp.addEventListener('touchend',function(e){ if(sx===null) return; var d=e.changedTouches[0].clientX-sx; if(Math.abs(d)>40){ d<0?next():prev(); } sx=null; start(); });
