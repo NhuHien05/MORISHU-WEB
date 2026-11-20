@@ -936,3 +936,6 @@ html{ -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; tex
 .story2 .story-text .btn-primary{ background:#0B5E3C; color:#fff; border:2px solid #0B5E3C; padding:14px 34px; font-weight:700; border-radius:999px; transition:transform .25s ease, box-shadow .25s ease; }
 .story2 .story-text .btn-primary:hover{ transform:translateY(-3px); box-shadow:0 10px 20px rgba(11,94,60,.22); }
 @media (max-width:900px){ .story2{ grid-template-columns:1fr; } }
+
+.story-eyebrow{ display:flex; align-items:center; gap:12px; margin-bottom:10px; }
+.story-eyebrow span{ font-family:"Montserrat","Inter",sans-serif; font-weight:700; font-size:clamp(.85rem,1.1vw,1rem); letter-spacing:.08em; color:#1F7A47; }
