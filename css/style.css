@@ -903,3 +903,10 @@ h2 em{ font-style:normal; }
 /* ---- footer headings: no underline, accent colour ---- */
 .site-footer h4::after{ display:none !important; }
 .site-footer h4{ color:#F4C95D !important; padding-bottom:0; margin-bottom:16px; }
+
+/* ---- refine product-section text (less heavy) ---- */
+html{ -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; text-rendering:optimizeLegibility; }
+.feat-section .section-head h2{ font-size:clamp(1.4rem,2.2vw,2.1rem); letter-spacing:-.005em; }
+.feat-section .eyebrow{ letter-spacing:.16em; font-weight:600; font-size:.74rem; }
+.feat-body h3{ font-size:clamp(.88rem,1.05vw,1rem); letter-spacing:.07em; }
+.feat-body .feat-link{ font-size:.82rem; }
