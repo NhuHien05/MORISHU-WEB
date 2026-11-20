@@ -913,3 +913,18 @@ html{ -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; tex
 
 /* certifications label: no side lines */
 .cv-line i{ display:none !important; }
+
+/* ---- CTA: light layout per mockup (dark gradient heading, dark-green + outline buttons) ---- */
+.cta-photo::before{ display:block !important; background:linear-gradient(90deg, rgba(250,253,248,.97) 0%, rgba(250,253,248,.9) 34%, rgba(250,253,248,.35) 56%, rgba(250,253,248,0) 72%) !important; }
+.cta-photo h2{ background:linear-gradient(90deg,#015E12 0%,#2F8A0C 55%,#8CCB04 100%) !important; -webkit-background-clip:text !important; background-clip:text !important; -webkit-text-fill-color:transparent !important; color:transparent !important; width:fit-content; font-size:clamp(1.7rem,3.2vw,3rem); line-height:1.12; letter-spacing:-.01em; margin-bottom:14px; }
+.cta-photo p{ color:#5A5A4A !important; font-size:clamp(.95rem,1.2vw,1.12rem); line-height:1.55; max-width:30em; }
+.cta-photo .cta-actions{ gap:16px; }
+.cta-photo .cta-actions .btn{ padding:14px 30px; font-weight:700; border-radius:999px; transition:transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease; }
+.cta-photo .cta-actions .btn-outline-light{ background:#0B5E3C !important; color:#fff !important; border:2px solid #0B5E3C !important; order:1; }
+.cta-photo .cta-actions .btn-primary{ background:transparent !important; color:#0B5E3C !important; border:2px solid #2E8B57 !important; order:2; }
+.cta-photo .cta-actions .btn:hover{ transform:translateY(-3px); box-shadow:0 10px 20px rgba(11,94,60,.22); }
+.cta-photo .cta-actions .btn-primary:hover{ background:#E8F6EC !important; }
+@media (max-width:900px){
+  .cta-photo{ background:#FAFDF8 !important; border:1px solid #DCEFE0; }
+  .cta-photo h2{ font-size:clamp(1.5rem,6.4vw,2rem); }
+}
