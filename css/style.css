@@ -757,3 +757,13 @@ html,body{ overflow-x:clip; }
 .feat-arrow:hover{ background:var(--green-900); color:#fff; transform:scale(1.06); }
 .feat-arrow.prev{ left:-6px; } .feat-arrow.next{ right:-6px; }
 @media (max-width:900px){ .feat-carousel{ padding:0 22px; } .feat-arrow{ width:38px; height:38px; } .feat-arrow.prev{ left:-4px; } .feat-arrow.next{ right:-4px; } }
+
+
+/* ---- product cards: "View Product" as hover effect ---- */
+.feat-photo{ position:relative; overflow:hidden; }
+.feat-card .feat-photo .feat-link{ position:absolute; left:50%; bottom:16px; transform:translate(-50%,14px); opacity:0; background:var(--green-900); color:#fff; padding:9px 20px; border-radius:999px; font-size:.85rem; font-weight:600; white-space:nowrap; transition:opacity .3s ease, transform .3s ease; pointer-events:none; }
+.feat-card:hover .feat-photo .feat-link, .feat-card:focus-visible .feat-photo .feat-link{ opacity:1; transform:translate(-50%,0); }
+.feat-card .feat-photo img{ transition:transform .5s ease; }
+.feat-card:hover .feat-photo img{ transform:scale(1.04); }
+.feat-body{ padding:18px 22px 22px; }
+@media (hover:none){ .feat-card .feat-photo .feat-link{ opacity:1; transform:translate(-50%,0); } }
