@@ -234,6 +234,17 @@ p{ margin:0 0 1em; color:var(--ink-soft); max-width:62ch; }
 .story-photo svg{ width:72%; height:72%; }
 .story-photo img{ width:100%; height:100%; object-fit:cover; }
 
+/* ---------- manufacturing split (homepage) ---------- */
+.mfg-split{ display:grid; grid-template-columns:1.1fr .9fr; gap:60px; align-items:center; margin-bottom:56px; }
+.mfg-split .section-head{ margin:0; }
+.mfg-photo{
+  border-radius:20px; aspect-ratio:14/9; overflow:hidden;
+  background:linear-gradient(155deg, var(--green-mist), var(--cream-soft));
+  display:flex; align-items:center; justify-content:center;
+}
+.mfg-photo svg{ width:70%; height:70%; }
+.mfg-photo img{ width:100%; height:100%; object-fit:cover; }
+
 /* ---------- flavor grid ---------- */
 .flavor-grid{
   display:grid; grid-template-columns:repeat(7,1fr); gap:20px;
@@ -420,7 +431,7 @@ p{ margin:0 0 1em; color:var(--ink-soft); max-width:62ch; }
   .main-nav.open{ transform:translateX(0); }
   .nav-toggle{ display:flex; }
   .header-actions .btn-primary{ display:none; }
-  .hero-grid, .story, .contact-grid{ grid-template-columns:1fr; }
+  .hero-grid, .story, .mfg-split, .contact-grid{ grid-template-columns:1fr; }
   .story{ gap:36px; }
   .footer-inner{ grid-template-columns:1fr 1fr; }
   .cta-banner{ flex-direction:column; align-items:flex-start; }
