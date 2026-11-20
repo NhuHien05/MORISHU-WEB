@@ -801,3 +801,13 @@ html,body{ overflow-x:clip; }
 .social-row a[aria-label="Instagram"]{ background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%) !important; }
 .social-row a[aria-label="YouTube"]{ background:#FF0000 !important; }
 .social-row a:hover{ transform:translateY(-3px) scale(1.08); box-shadow:0 6px 14px rgba(0,0,0,.28); }
+
+/* ---- product names: bold, impactful ---- */
+.feat-body h3{ font-family:var(--font-display); font-weight:800; font-size:clamp(1.1rem,1.5vw,1.4rem); letter-spacing:.05em; line-height:1.15; color:var(--green-900); position:relative; padding-bottom:12px; margin:0; }
+.feat-body h3::after{ content:""; position:absolute; left:50%; bottom:0; width:34px; height:3px; border-radius:3px; background:linear-gradient(90deg,#2E8B57,#8CCB04); transform:translateX(-50%); transition:width .4s ease; }
+.feat-card:hover .feat-body h3{ letter-spacing:.05em; color:var(--green-800); }
+.feat-card:hover .feat-body h3::after{ width:72px; }
+.feat-body{ min-height:0; padding:20px 14px 20px; }
+.feat-body .feat-link{ font-weight:700; font-size:.9rem; }
+.feat-card:hover .feat-body .feat-link{ margin-top:6px; }
+@media (hover:none){ .feat-body .feat-link{ margin-top:6px; } }
